@@ -10,6 +10,9 @@
     <main id="main">
     </main>
 
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="index.js"></script>
+
     <script id="recipe-form-template" type="text/x-handlebars-template">
       <form onsubmit="createRecipe();return false;">
         Recipe Name: <input type="text" name="name"><br>
@@ -36,8 +39,7 @@
       {{/each}}
     </script>
 
-    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
-    <script src="index.js"></script>
+
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
